@@ -1,7 +1,7 @@
 # Android Weather App
 Android app with daily and weekly weather-related information.
 
-The Figure below shows the daily forecast based on the current location (on the left), the weekly forecast based on the current location (in the middle), and the weekly forecast for either a specific city and country or a set of coordinates in the world:
+The Figure below shows the daily forecast based on the current location (on the left), the weekly forecast based on the current location (in the middle), and the weekly forecast for either a specific city and country or a set of coordinates in the world (on the right):
 
 ![Weather App Screenshots](https://github.com/ro-afonso/weather-app-android/assets/93609933/b2c1bfad-2cc6-438a-959f-f21f55df052f)
 
