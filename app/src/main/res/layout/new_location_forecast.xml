@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_image"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-30dp"
+    tools:layout_editor_absoluteY="20dp">
+
+    <EditText
+        android:id="@+id/editTextCountryCode"
+        android:layout_width="121dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="96dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="PT"
+        android:inputType="textPersonName"
+        android:padding="5sp"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#9A9A9A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextCityName"
+        android:layout_width="121dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Lisboa"
+        android:inputType="textPersonName"
+        android:padding="5sp"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#9A9A9A"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextLat"
+        android:layout_width="121dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Latitude"
+        android:inputType="textPersonName"
+        android:padding="5sp"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#9A9A9A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextLon"
+        android:layout_width="121dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Longitude"
+        android:inputType="textPersonName"
+        android:padding="5sp"
+        android:textColor="#FFFDFD"
+        android:textColorHint="#9A9A9A"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btSetCityAndCountry"
+        android:layout_width="90dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#2DF44336"
+        android:padding="4sp"
+        android:text="Set City and Country"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btSetLatAndLon"
+        android:layout_width="79dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#2DF44336"
+        android:padding="5sp"
+        android:text="Set Lat and Lon"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btSetCityAndCountry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btBackToCurrentLocation"
+        android:layout_width="90dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#2DF44336"
+        android:padding="4sp"
+        android:text="Back to Current Location"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="373dp"
+        android:layout_height="544dp"
+        android:padding="20dp"
+        app:cardBackgroundColor="#505B8CE1 "
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.88">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btWeeklyFour2"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:backgroundTint="#2DF44336"
+                android:padding="6sp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/btWeeklyFive2"
+                app:layout_constraintStart_toEndOf="@+id/btWeeklyThree2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btWeeklyOne2"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="6dp"
+                android:backgroundTint="#2DF44336"
+                android:padding="6sp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btWeeklyTwo2"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="2dp"
+                android:backgroundTint="#2DF44336"
+                android:padding="6sp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/btWeeklyOne2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btWeeklyFive2"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="2dp"
+                android:backgroundTint="#2DF44336"
+                android:padding="6sp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/btWeeklySix2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btWeeklySix2"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="2dp"
+                android:backgroundTint="#2DF44336"
+                android:padding="6sp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/btWeeklySeven2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btWeeklySeven2"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#2DF44336"
+                android:padding="6sp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btWeeklyThree2"
+                android:layout_width="50dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="2dp"
+                android:backgroundTint="#2DF44336"
+                android:padding="6sp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@+id/btWeeklyTwo2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/info_pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="20dp"
+                android:text="0 mb"
+                android:textColor="#C4FAC7"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/info_text4"
+                app:layout_constraintStart_toEndOf="@+id/info_text4"
+                app:layout_constraintTop_toTopOf="@+id/info_text4" />
+
+            <ImageView
+                android:id="@+id/info_image"
+                android:layout_width="71dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/info_description"
+                app:layout_constraintStart_toEndOf="@+id/info_description"
+                app:layout_constraintTop_toTopOf="@+id/info_description"
+                app:layout_constraintVertical_bias="0.525"
+                app:srcCompat="@android:drawable/presence_offline" />
+
+            <TextView
+                android:id="@+id/info_text6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="UV"
+                android:textColor="#8891C5"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/info_text5"
+                app:layout_constraintTop_toBottomOf="@+id/info_text5" />
+
+            <TextView
+                android:id="@+id/info_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pressure"
+                android:textColor="#8891C5"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/info_text3"
+                app:layout_constraintTop_toBottomOf="@+id/info_text3" />
+
+            <TextView
+                android:id="@+id/info_UV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="20dp"
+                android:text="-"
+                android:textColor="#C4FAC7"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/info_text6"
+                app:layout_constraintStart_toEndOf="@+id/info_text6"
+                app:layout_constraintTop_toTopOf="@+id/info_text6" />
+
+            <TextView
+                android:id="@+id/info_text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Precipitation %"
+                android:textColor="#8891C5"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/info_text4"
+                app:layout_constraintTop_toBottomOf="@+id/info_text4" />
+
+            <TextView
+                android:id="@+id/info_precipitation_probability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="20dp"
+                android:text="0 %"
+                android:textColor="#C4FAC7"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/info_text5"
+                app:layout_constraintStart_toEndOf="@+id/info_text5"
+                app:layout_constraintTop_toTopOf="@+id/info_text5" />
+
+            <TextView
+                android:id="@+id/info_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="20dp"
+                android:text="@string/no_mood"
+                android:textColor="#C4FAC7"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/info_text2"
+                app:layout_constraintStart_toEndOf="@+id/info_text2"
+                app:layout_constraintTop_toTopOf="@+id/info_text2" />
+
+            <TextView
+                android:id="@+id/info_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Desc"
+                android:textColor="#8891C5"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/info_text6"
+                app:layout_constraintTop_toBottomOf="@+id/info_text6" />
+
+            <TextView
+                android:id="@+id/info_text9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dp"
+                android:text="Map Under Development!"
+                android:textColor="#8891C5"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/info_text6"
+                app:layout_constraintTop_toBottomOf="@+id/info_text6" />
+
+            <ImageView
+                android:id="@+id/map_image"
+                android:layout_width="277dp"
+                android:layout_height="98dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@android:drawable/presence_away" />
+
+            <TextView
+                android:id="@+id/info_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Humidity"
+                android:textColor="#8891C5"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@+id/info_text1"
+                app:layout_constraintTop_toBottomOf="@+id/info_text1" />
+
+            <TextView
+                android:id="@+id/info_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="20dp"
+                android:text="@string/_0_c"
+                android:textColor="#C4FAC7"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/info_text1"
+                app:layout_constraintStart_toEndOf="@+id/info_text1"
+                app:layout_constraintTop_toTopOf="@+id/info_text1"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <TextView
+                android:id="@+id/info_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Temperature"
+                android:textColor="#8891C5"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.156" />
+
+            <TextView
+                android:id="@+id/info_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginStart="20dp"
+                android:text="0%"
+                android:textColor="#C4FAC7"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@+id/info_text3"
+                app:layout_constraintStart_toEndOf="@+id/info_text3"
+                app:layout_constraintTop_toTopOf="@+id/info_text3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewCity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="96dp"
+        android:text="Country:"
+        android:textColor="#FFFCFC"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewHelpLocationForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:background="#2D35F600"
+        android:text="Please set either Lat and Lon or City and Country Code!"
+        android:textColor="#00FB0D"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="68dp"
+        android:text="City:"
+        android:textColor="#FFFCFC"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="40dp"
+        android:text="Lon:"
+        android:textColor="#FFFCFC"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:text="Lat:"
+        android:textColor="#FFFCFC"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

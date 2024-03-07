@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather2022</string>
+    <string name="weather_app">Weather App</string>
+    <string name="get_weather">Get Weather</string>
+    <string name="_0_c">0 ºC</string>
+    <string name="temperature">Temperature</string>
+    <string name="description">Description</string>
+    <string name="no_mood">No mood</string>
+</resources>
