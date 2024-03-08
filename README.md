@@ -1,5 +1,5 @@
 # Android Weather App
-Android app with daily and weekly weather-related information.
+Android app with daily and weekly real-time weather-related information.
 
 The Figure below shows the daily forecast based on the current location (on the left), the weekly forecast based on the current location (in the middle), and the weekly forecast for either a specific city and country or a set of coordinates in the world (on the right):
 
